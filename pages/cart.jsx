@@ -108,7 +108,7 @@ const Cart = () => {
           ) : (
             <div className={styles.buttons}>
               <button onClick={() => setOpen(true)}>Олатити готiвкою</button>
-              <LiqPayPay
+              {/* <LiqPayPay
                 publicKey="sandbox_i15015619628"
                 privateKey="sandbox_nNj3TuaempejrBwXvgOdLwGh8WBVeWyFg8VKSX1z"
                 amount={cart.total}
@@ -119,7 +119,7 @@ const Cart = () => {
                 server_url="localhost:3000/cart"
                 product_description="pies"
                 extra={[<LiqpayButton />]}
-              />
+              /> */}
             </div>
           )}
 
