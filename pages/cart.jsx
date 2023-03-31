@@ -1,8 +1,8 @@
 import styles from "../styles/Cart.module.css";
 import Image from "next/image";
 import { useSelector, useDispatch } from "react-redux";
-import { LiqPayPay } from "react-liqpay";
-import LiqpayButton from "../components/LiqpayButton";
+/* import { LiqPayPay } from "react-liqpay";*/
+/* import LiqpayButton from "../components/LiqpayButton"; */
 import { useState } from "react";
 import axios from "axios";
 import { useRouter } from "next/router";
@@ -107,7 +107,7 @@ const Cart = () => {
             </div>
           ) : (
             <div className={styles.buttons}>
-              <button onClick={() => setOpen(true)}>Олатити готiвкою</button>
+              <button onClick={() => setOpen(true)}>Олатити кешем</button>
               {/* <LiqPayPay
                 publicKey="sandbox_i15015619628"
                 privateKey="sandbox_nNj3TuaempejrBwXvgOdLwGh8WBVeWyFg8VKSX1z"
